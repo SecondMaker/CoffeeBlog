@@ -28,7 +28,7 @@ body{
 .contenedor{
     /*max-width: 120rem;*/
     /*width: 90%;*/
-    width: min(90%, 120rem); /*De esta forma aplicamos una anchura de espacion "minima" segun el tamaño de la pantalla*/
+    width: min(90%, 120rem); /*De esta forma aplicamos una anchura de espacio "minima" segun el tamaño de la pantalla*/
     margin: 0 auto;
 }
 
@@ -211,4 +211,32 @@ img{
     background-color: var(--negro);
     padding: 3rem 0;
     margin-top: 4rem;
+}
+
+/*Sobre nosotros */
+
+@media(min-width: 768px){
+    /* En esta seccion aplique, varios metodos de lograr los mismo dos maneras 
+    a traves de flexbox una manera  a traves de grid*/
+    .sobre-nosotros{
+        display: flex;
+        /*gap: 2rem; */
+        justify-content: space-between;
+    }
+
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    /*.sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: calc(50% - 1rem);
+    }*/
+
+    /*Con grid
+    .sobre_nosotros{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    colum-gap: 2rem*/
 }
