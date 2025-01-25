@@ -296,7 +296,7 @@ img{
 
 .campo__field{
     flex: 1;
-    border: 1px solid var(--gris);
+    border: 5px solid var(--gris);
 }
 
 .campo__field--textarea{
